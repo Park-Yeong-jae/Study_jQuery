@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	// 브라우저 모든 태그를 인식한 이후, 함수를 호출함
+	jQuery(function() {
+		var h1 = $("#hello");  		// id가 hello인 태그 읽어오기
+		h1.html("Hello jQuery!!");  // h1 태그에 문자열 출력
+	});
+	
+/*
+	function hello() {
+		var h1 = $("#hello");  		// id가 hello인 태그 읽어오기
+		h1.html("Hello jQuery!!");  // h1 태그에 문자열 출력
+	}
+	
+	jQuery(hello);
+*/
+</script>
+</head>
+<body>
+	<h1 id="hello"></h1>
+</body>
+</html>

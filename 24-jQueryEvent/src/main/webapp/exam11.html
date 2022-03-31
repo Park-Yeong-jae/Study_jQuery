@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/event.css" />
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#singleBtn").click(function(){
+			// $(this) : 선택된 태그를 나타냄
+			$(this).html("감사합니다.")
+		});
+		
+		$(".multiBtn").click(function(){
+			var result = $(this).index() + "번째 요소를 눌렀습니다.";
+			$(this).html(result);
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>this의 사용</h1>
+	<div id="input">
+		<h2>단독 개체의 확인</h2>
+		<div id="singleBtn">클릭하세요</div>
+		
+		<h2>복수 개체의 확인</h2>
+		<div>
+			<button class="multiBtn">클릭하세요</button>
+			<button class="multiBtn">클릭하세요</button>
+			<button class="multiBtn">클릭하세요</button>
+			<button class="multiBtn">클릭하세요</button>
+		</div>
+	</div>
+</body>
+</html>
